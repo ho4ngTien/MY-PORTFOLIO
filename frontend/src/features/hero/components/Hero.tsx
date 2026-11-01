@@ -1,20 +1,79 @@
+import type { Variants } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { ArrowDown, ArrowUpRight } from 'lucide-react'
+
+const containerVariants: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      delayChildren: 0.1,
+      staggerChildren: 0.1,
+    },
+  },
+}
+
+const itemVariants: Variants = {
+  hidden: { opacity: 0, y: 16 },
+  visible: {
+    opacity: 1,
+    transition: { duration: 0.35, ease: 'easeOut' },
+    y: 0,
+  },
+}
 
 export function Hero() {
   return (
     <section className="hero" id="hero">
       <div className="hero-inner">
-        <div className="hero-copy">
-          <p className="eyebrow">Hoàng Tiến · Frontend Builder</p>
-          <h1>Thoughtful digital experiences, <span>built for people.</span></h1>
-          <p className="hero-role">I am a <strong>Frontend Developer</strong></p>
-          <p className="hero-description">I build clear, responsive interfaces and practical products with React, TypeScript, and a product-minded approach.</p>
-          <div className="hero-actions">
-            <a className="button" href="#projects">Explore my work <ArrowUpRight size={16} /></a>
-            <a className="button button-outline" href="#contact">Get in touch</a>
-          </div>
-        </div>
-        <a className="hero-note" href="#about"><span /> Based in Ho Chi Minh City <ArrowDown size={15} /></a>
+        <motion.div
+          animate="visible"
+          className="hero-copy"
+          initial="hidden"
+          variants={containerVariants}
+        >
+          <motion.p className="eyebrow" variants={itemVariants}>
+            Hoàng Tiến · Frontend Builder
+          </motion.p>
+          <motion.h1 variants={itemVariants}>
+            Thoughtful digital experiences, <span>built for people.</span>
+          </motion.h1>
+          <motion.p className="hero-role" variants={itemVariants}>
+            I am a <strong>Frontend Developer</strong>
+          </motion.p>
+          <motion.p className="hero-description" variants={itemVariants}>
+            I build clear, responsive interfaces and practical products with React, TypeScript, and a product-minded approach.
+          </motion.p>
+          <motion.div className="hero-actions" variants={itemVariants}>
+            <motion.a
+              className="button"
+              href="#projects"
+              transition={{ duration: 0.15 }}
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.97 }}
+            >
+              Explore my work <ArrowUpRight size={16} />
+            </motion.a>
+            <motion.a
+              className="button button-outline"
+              href="#contact"
+              transition={{ duration: 0.15 }}
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.97 }}
+            >
+              Get in touch
+            </motion.a>
+          </motion.div>
+        </motion.div>
+        <motion.a
+          animate={{ opacity: 1 }}
+          className="hero-note"
+          href="#about"
+          initial={{ opacity: 0 }}
+          transition={{ delay: 0.6, duration: 0.4 }}
+        >
+          <span /> Based in Ho Chi Minh City <ArrowDown size={15} />
+        </motion.a>
       </div>
     </section>
   )

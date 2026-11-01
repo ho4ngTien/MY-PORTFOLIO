@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import { GraduationCap, BriefcaseBusiness } from 'lucide-react'
 import { educationItems, experienceItems } from '@/shared/constants'
 import { SectionHeading } from '@/shared/components'
@@ -6,9 +7,19 @@ export function Resume() {
   return (
     <section className="section resume-section" id="resume">
       <div className="section-inner">
-        <SectionHeading eyebrow="The path so far" title="Resume" description="A mix of academic foundations, independent practice, and hands-on projects." />
+        <SectionHeading
+          description="A mix of academic foundations, independent practice, and hands-on projects."
+          eyebrow="The path so far"
+          title="Resume"
+        />
         <div className="resume-grid">
-          <div className="resume-column" data-reveal>
+          <motion.div
+            className="resume-column"
+            initial={{ opacity: 0, y: 20 }}
+            transition={{ duration: 0.35, ease: 'easeOut' }}
+            viewport={{ once: true, margin: '-50px' }}
+            whileInView={{ opacity: 1, y: 0 }}
+          >
             <h3><BriefcaseBusiness size={19} /> Experience</h3>
             <div className="timeline">
               {experienceItems.map((item) => (
@@ -20,8 +31,14 @@ export function Resume() {
                 </article>
               ))}
             </div>
-          </div>
-          <div className="resume-column" data-reveal>
+          </motion.div>
+          <motion.div
+            className="resume-column"
+            initial={{ opacity: 0, y: 20 }}
+            transition={{ duration: 0.35, delay: 0.1, ease: 'easeOut' }}
+            viewport={{ once: true, margin: '-50px' }}
+            whileInView={{ opacity: 1, y: 0 }}
+          >
             <h3><GraduationCap size={20} /> Education</h3>
             <div className="timeline">
               {educationItems.map((item) => (
@@ -33,7 +50,7 @@ export function Resume() {
                 </article>
               ))}
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
