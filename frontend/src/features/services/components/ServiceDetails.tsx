@@ -29,9 +29,9 @@ export function ServiceDetails() {
             <h1>{service.title}</h1>
             <p>{service.description}</p>
             <ul>
-              <li><Check size={17} /> Responsive layouts designed around real screen sizes.</li>
-              <li><Check size={17} /> Reusable React components with clear feature boundaries.</li>
-              <li><Check size={17} /> Thoughtful interaction, accessibility, and final polish.</li>
+              <li><Check size={17} /> End-to-end implementation from frontend interfaces to backend services.</li>
+              <li><Check size={17} /> Robust architecture, database modeling (PostgreSQL), and Docker containerization.</li>
+              <li><Check size={17} /> Clean system contracts, data pipeline scalability, and thoughtful interaction polish.</li>
             </ul>
             <p>We start by aligning on the people using the product, the important tasks, and the scope that makes sense. From there, I build and refine the interface in clear, reviewable steps.</p>
             <Link className="button" to="/#contact">Discuss this service <ArrowRight size={16} /></Link>

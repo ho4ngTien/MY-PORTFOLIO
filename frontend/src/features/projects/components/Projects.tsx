@@ -14,7 +14,11 @@ export function Projects() {
   return (
     <section className="section projects-section" id="projects">
       <div className="section-inner">
-        <SectionHeading eyebrow="Selected work" title="Portfolio" description="A few projects that show how I approach interfaces, systems, and real-world workflows." />
+        <SectionHeading
+          description="Selected projects demonstrating end-to-end full-stack architectures, practical systems, and data workflows."
+          eyebrow="Selected work"
+          title="Portfolio"
+        />
         <div aria-label="Filter projects" className="project-filters" role="group">
           {filters.map((filter) => (
             <motion.button

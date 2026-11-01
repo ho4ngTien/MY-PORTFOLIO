@@ -4,8 +4,8 @@ import { BriefcaseBusiness, Code2, MonitorSmartphone } from 'lucide-react'
 
 const figures = [
   { value: '04', label: 'Featured projects', icon: BriefcaseBusiness },
-  { value: '06+', label: 'Tools in my daily stack', icon: Code2 },
-  { value: '100%', label: 'Responsive by default', icon: MonitorSmartphone },
+  { value: '06+', label: 'Core technologies in stack', icon: Code2 },
+  { value: '100%', label: 'End-to-end system mindset', icon: MonitorSmartphone },
 ]
 
 function parseStatValue(raw: string) {

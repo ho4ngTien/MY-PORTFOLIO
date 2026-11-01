@@ -36,8 +36,8 @@ export function Contact() {
             viewport={{ once: true, margin: '-50px' }}
             whileInView={{ opacity: 1, x: 0 }}
           >
-            <h3>Let's build something useful.</h3>
-            <p>I am open to internships, freelance builds, and thoughtful collaboration. Reach out through whichever channel is easiest.</p>
+            <h3>Let's connect & collaborate.</h3>
+            <p>I am open to software engineering internships, junior full-stack / data engineering opportunities, and project collaboration. Reach out through whichever channel is easiest.</p>
             <div className="contact-detail"><span className="contact-icon"><MapPin size={19} /></span><div><strong>Location</strong><span>Ho Chi Minh City, Vietnam</span></div></div>
             <div className="contact-detail"><span className="contact-icon"><Mail size={19} /></span><div><strong>Email</strong><a href={`mailto:${contactEmail}`}>{contactEmail}</a></div></div>
             <div className="contact-detail"><span className="contact-icon"><CodeXml size={19} /></span><div><strong>GitHub</strong><a href="https://github.com/ho4ngTien" rel="noreferrer" target="_blank">github.com/ho4ngTien</a></div></div>

@@ -11,7 +11,7 @@ export function Services() {
     <section className="section services-section" id="services">
       <div className="section-inner">
         <SectionHeading
-          description="Practical support for teams and people building their next useful web experience."
+          description="Technical capabilities across full-stack application development, robust backend systems, and scalable data workflows."
           eyebrow="How I can help"
           title="Services"
         />

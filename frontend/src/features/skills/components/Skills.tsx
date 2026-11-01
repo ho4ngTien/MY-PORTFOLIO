@@ -65,7 +65,7 @@ export function Skills() {
     <section className="section skills-section" id="skills">
       <div className="section-inner">
         <SectionHeading
-          description="The tools and practices I use to move from idea to a reliable, polished interface."
+          description="The technologies and system practices I use to architect robust web platforms and scalable data solutions."
           eyebrow="What I work with"
           title="Skills"
         />

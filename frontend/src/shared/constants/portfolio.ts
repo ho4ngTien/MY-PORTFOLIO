@@ -9,54 +9,200 @@ export const navigationItems = [
 ]
 
 export const skillGroups = [
-  { title: 'Frontend Craft', subtitle: 'UI composition and interactive experiences', skills: [{ name: 'React', value: 92 }, { name: 'TypeScript', value: 90 }, { name: 'Tailwind CSS', value: 94 }, { name: 'Framer Motion', value: 80 }] },
-  { title: 'Application Architecture', subtitle: 'Scalable structure and reusable systems', skills: [{ name: 'Component Design', value: 91 }, { name: 'Routing & Layouts', value: 86 }, { name: 'API Integration', value: 84 }, { name: 'State Management', value: 79 }] },
-  { title: 'Delivery Workflow', subtitle: 'Tools that support reliable shipping', skills: [{ name: 'Git & GitHub', value: 93 }, { name: 'Vite', value: 89 }, { name: 'ESLint', value: 85 }, { name: 'Responsive QA', value: 90 }] },
+  {
+    title: 'Frontend & Web UI',
+    subtitle: 'Responsive, component-driven and type-safe interfaces',
+    skills: [
+      { name: 'React', value: 92 },
+      { name: 'TypeScript', value: 90 },
+      { name: 'Tailwind CSS', value: 94 },
+      { name: 'Framer Motion & UX', value: 85 },
+    ],
+  },
+  {
+    title: 'Backend & Systems',
+    subtitle: 'Server architecture, APIs, and relational databases',
+    skills: [
+      { name: 'Java & Spring Boot', value: 88 },
+      { name: 'PostgreSQL & Database Design', value: 86 },
+      { name: 'RESTful API Architecture', value: 88 },
+      { name: 'Docker & Containerization', value: 80 },
+    ],
+  },
+  {
+    title: 'Data & Engineering Workflow',
+    subtitle: 'Data pipeline concepts, system thinking, and shipping',
+    skills: [
+      { name: 'Data Pipelines & ETL', value: 80 },
+      { name: 'SQL & Data Modeling', value: 88 },
+      { name: 'System Thinking & Problem Solving', value: 92 },
+      { name: 'Git & Deployment', value: 90 },
+    ],
+  },
 ]
 
 export const experienceItems = [
-  { year: '2023 - Present', title: 'Computer Science Student', company: 'University of Transport Ho Chi Minh City', description: 'Studying software engineering fundamentals, web systems, and delivery best practices.' },
-  { year: '2024 - Present', title: 'Frontend Builder', company: 'Independent projects', description: 'Designing responsive landing pages and product interfaces with React, TypeScript, and Tailwind.' },
-  { year: '2022 - 2024', title: 'Full-stack Explorer', company: 'Academic and self-directed work', description: 'Building Spring Boot and MySQL backends to support feature-rich web applications.' },
+  {
+    year: '2023 - Present',
+    title: 'Computer Science Student',
+    company: 'University of Transport Ho Chi Minh City',
+    description: 'Studying core software engineering, operating systems, database management systems, and distributed system fundamentals.',
+  },
+  {
+    year: '2024 - Present',
+    title: 'Full-Stack Developer & Data Explorer',
+    company: 'Academic & independent projects',
+    description: 'Developing end-to-end applications using React, TypeScript, Java Spring Boot, PostgreSQL, and Docker with a focus on clean system architecture and data reliability.',
+  },
+  {
+    year: '2023 - 2024',
+    title: 'Backend & System Development',
+    company: 'Project collaboration',
+    description: 'Designed relational schemas, implemented business logic in Spring Boot, and integrated PostgreSQL databases for civic-tech and educational platforms.',
+  },
 ]
 
 export const educationItems = [
-  { degree: 'Computer Science', institution: 'University of Transport Ho Chi Minh City', year: '2023 - Present', description: 'Focused on programming fundamentals, data structures, and application delivery.' },
-  { degree: 'Frontend / Backend Practice', institution: 'React, TypeScript, Spring Boot, MySQL', year: 'Self-directed', description: 'Combining interface design with service-oriented thinking and practical implementation.' },
+  {
+    degree: 'Computer Science',
+    institution: 'University of Transport Ho Chi Minh City',
+    year: '2023 - Present',
+    description: 'Focusing on computer systems, software architecture, relational databases, algorithms, and analytical problem-solving.',
+  },
+  {
+    degree: 'Software & Data Engineering Track',
+    institution: 'Self-directed & practical systems',
+    year: 'Continuous',
+    description: 'Building deep foundations across the entire application lifecycle—connecting intuitive frontends with robust backends, and steering toward scalable Data Pipelines & Warehouses.',
+  },
 ]
 
 export const projects = [
-  { slug: 'personal-portfolio', category: 'Frontend', label: 'Frontend / Portfolio', year: '2026', title: 'Personal Portfolio Landing Page', description: 'A recruiter-friendly portfolio with a clear story, responsive layouts, and purposeful interactions.', tech: ['React', 'TypeScript', 'Tailwind CSS'], image: '/images/portfolio/app-1.jpg', githubUrl: 'https://github.com/ho4ngTien/my-profile' },
-  { slug: 'flood-rescue', category: 'Full Stack', label: 'Civic Tech / Full Stack', year: '2024', title: 'Flood Rescue Coordination', description: 'A coordination platform for relief workflows, volunteer matching, and crisis updates.', tech: ['Java', 'Spring Boot', 'React', 'MySQL'], image: '/images/portfolio/product-1.jpg', githubUrl: 'https://github.com/longtq2501/Flood-Rescue-Coordination-and-Relief-Management-System' },
-  { slug: 'edu-student-management', category: 'Product', label: 'Education Platform', year: '2024', title: 'Edu Student Management', description: 'A school management system with classroom, grade, and learning module support.', tech: ['Java', 'Spring Boot', 'MySQL'], image: '/images/portfolio/books-1.jpg', githubUrl: 'https://github.com/ho4ngTien/Edu' },
-  { slug: 'system-dashboard', category: 'Product', label: 'Dashboard Concept', year: '2025', title: 'System Dashboard Mockup', description: 'A concept for metrics, workflow tracking, and quick status scanning in one view.', tech: ['React', 'Design System', 'UI Motion'], image: '/images/portfolio/branding-1.jpg', githubUrl: 'https://github.com/ho4ngTien' },
+  {
+    slug: 'flood-rescue',
+    category: 'Full Stack',
+    label: 'Civic Tech / Full Stack',
+    year: '2024',
+    title: 'Flood Rescue Coordination & Management',
+    description: 'An emergency platform connecting relief supplies, volunteer matching, and real-time crisis dispatching.',
+    tech: ['Java', 'Spring Boot', 'React', 'MySQL', 'PostgreSQL'],
+    image: '/images/portfolio/product-1.jpg',
+    githubUrl: 'https://github.com/longtq2501/Flood-Rescue-Coordination-and-Relief-Management-System',
+  },
+  {
+    slug: 'edu-student-management',
+    category: 'Full Stack',
+    label: 'Education Platform / Full Stack',
+    year: '2024',
+    title: 'Edu Student & Course Management',
+    description: 'A modular education management system handling student profiles, grading workflows, and classroom modules.',
+    tech: ['Java', 'Spring Boot', 'MySQL', 'Docker'],
+    image: '/images/portfolio/books-1.jpg',
+    githubUrl: 'https://github.com/ho4ngTien/Edu',
+  },
+  {
+    slug: 'system-dashboard',
+    category: 'Product',
+    label: 'Data & System Dashboard',
+    year: '2025',
+    title: 'System Metrics & Data Dashboard Mockup',
+    description: 'A concept for data metrics visualization, process monitoring, and real-time status scanning in one view.',
+    tech: ['React', 'TypeScript', 'Data Visualization', 'UI Motion'],
+    image: '/images/portfolio/branding-1.jpg',
+    githubUrl: 'https://github.com/ho4ngTien',
+  },
+  {
+    slug: 'personal-portfolio',
+    category: 'Frontend',
+    label: 'Portfolio & System Showcase',
+    year: '2026',
+    title: 'Personal Portfolio & Engineering Showcase',
+    description: 'A responsive developer portfolio highlighting end-to-end full-stack capabilities, system mindset, and data focus.',
+    tech: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+    image: '/images/portfolio/app-1.jpg',
+    githubUrl: 'https://github.com/ho4ngTien/my-profile',
+  },
 ]
 
 export const services = [
-  { slug: 'portfolio-landing-pages', title: 'Portfolio & Landing Pages', description: 'Clean one-page experiences with considered visuals, smooth motion, and responsive structure.' },
-  { slug: 'frontend-systems', title: 'Frontend Systems', description: 'Reusable components, layout architecture, and scalable UI patterns for product teams.' },
-  { slug: 'full-stack-prototypes', title: 'Full-Stack Prototypes', description: 'Web applications that connect polished interfaces to practical backend workflows.' },
-  { slug: 'interface-polish', title: 'Interface Polish', description: 'Refinement passes that improve hierarchy, spacing, motion, and conversion clarity.' },
+  {
+    slug: 'full-stack-web-apps',
+    title: 'Full-Stack Web Applications',
+    description: 'Complete web solutions bridging intuitive React frontends with resilient Spring Boot backends and normalized PostgreSQL databases.',
+  },
+  {
+    slug: 'backend-api-architecture',
+    title: 'Backend & API Architecture',
+    description: 'Designing secure, scalable RESTful APIs, relational schema models, and containerized Docker environments.',
+  },
+  {
+    slug: 'data-processing-pipelines',
+    title: 'Data Pipelines & Workflows',
+    description: 'Designing structured data flows, ETL pipelines, and scalable database schemas geared toward analytics and data warehousing.',
+  },
+  {
+    slug: 'frontend-systems',
+    title: 'Modern Frontend Systems',
+    description: 'High-performance, type-safe interfaces built with React, TypeScript, Tailwind CSS, and polished modern animations.',
+  },
 ]
 
 export const collaborationOptions = [
-  { name: 'Discovery', detail: 'Define the audience, goals, content, and first useful release.' },
-  { name: 'Interface build', detail: 'Turn the direction into responsive, reusable React components.' },
-  { name: 'Polish & handoff', detail: 'Test key screen sizes, refine interactions, and prepare a clean handoff.' },
+  {
+    name: 'Discovery & System Design',
+    detail: 'Define requirements, design the data model, and outline clean frontend and backend architecture.',
+  },
+  {
+    name: 'Full-Stack Implementation',
+    detail: 'Develop resilient APIs, build type-safe user interfaces, and establish database migrations.',
+  },
+  {
+    name: 'Testing & Containerized Deployment',
+    detail: 'Containerize with Docker, ensure responsive behavior across devices, and prepare production deployment.',
+  },
 ]
 
 export const faqs = [
-  { question: 'What kind of projects do you take on?', answer: 'Portfolio sites, responsive landing pages, frontend systems, and practical full-stack prototypes.' },
-  { question: 'What is your usual frontend stack?', answer: 'React, TypeScript, Tailwind CSS, and Vite, with backend experience in Spring Boot and MySQL.' },
-  { question: 'Can you work from an existing design?', answer: 'Yes. I can implement from a design file, a working reference, or a clearly defined set of requirements.' },
-  { question: 'How do you approach responsive behavior?', answer: 'I build mobile-first and check the layout at phone, tablet, laptop, and wide desktop sizes.' },
-  { question: 'How can we discuss a project?', answer: 'Send a short brief by email with the goal, desired timing, and any references you already have.' },
+  {
+    question: 'What is your core technical background?',
+    answer: 'I have strong competencies across Full-Stack development: React, TypeScript, and Tailwind on the frontend, combined with Java, Spring Boot, PostgreSQL, and Docker on the backend.',
+  },
+  {
+    question: 'Why are you pursuing Data Engineering?',
+    answer: 'I have an innate passion for system architecture and large-scale data flow. Leveraging my software engineering foundation, I aim to specialize in scalable data pipelines, ETL workflows, and modern Data Warehousing.',
+  },
+  {
+    question: 'Do you build entire systems or just frontend?',
+    answer: 'From the start of university, I have focused on whole-system architecture—including database design, backend services, API communication, and frontend interfaces.',
+  },
+  {
+    question: 'How do you approach code quality and collaboration?',
+    answer: 'I value system thinking, modular component architecture, Git branching workflows, clear API contracts, and containerization with Docker to ensure reproducible environments.',
+  },
 ]
 
 export const testimonials = [
-  { name: 'Sophia Martinez', role: 'Operations Director', company: 'TechVision Corp', quote: 'The result felt premium, easy to navigate, and very clear for both clients and recruiters.', image: '/images/testimonials/testimonials-1.jpg' },
-  { name: 'Michael Anderson', role: 'Project Manager', company: 'InnovateTech Ltd', quote: 'Delivery was organized and the interface felt much more refined after the redesign.', image: '/images/testimonials/testimonials-2.jpg' },
-  { name: 'Jennifer Wilson', role: 'Digital Strategy Lead', company: 'FutureScope Inc', quote: 'Strong hierarchy, thoughtful spacing, and a confident modern visual direction.', image: '/images/testimonials/testimonials-3.jpg' },
+  {
+    name: 'Sophia Martinez',
+    role: 'Operations Director',
+    company: 'TechVision Corp',
+    quote: 'The resulting system was robust, easy to navigate, and demonstrated deep architectural care across both frontend and backend.',
+    image: '/images/testimonials/testimonials-1.jpg',
+  },
+  {
+    name: 'Michael Anderson',
+    role: 'Project Manager',
+    company: 'InnovateTech Ltd',
+    quote: 'Hoàng Tiến showed strong system thinking, delivered well-organized services, and quickly addressed complex requirements.',
+    image: '/images/testimonials/testimonials-2.jpg',
+  },
+  {
+    name: 'Jennifer Wilson',
+    role: 'Digital Strategy Lead',
+    company: 'FutureScope Inc',
+    quote: 'Clean architectural vision, thoughtful UI execution, and a forward-looking mindset towards data scalability.',
+    image: '/images/testimonials/testimonials-3.jpg',
+  },
 ]
 
 export const contactEmail = 'maichilanoob@gmail.com'

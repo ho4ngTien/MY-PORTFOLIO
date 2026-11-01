@@ -8,7 +8,7 @@ export function Pricing() {
     <section className="section pricing-section" id="approach">
       <div className="section-inner">
         <SectionHeading
-          description="A simple process keeps the scope clear and the finished experience useful."
+          description="A structured engineering process from architecture and data modeling to deployment."
           eyebrow="A clear way to work"
           title="How I collaborate"
         />

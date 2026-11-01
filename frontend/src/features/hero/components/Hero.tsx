@@ -33,16 +33,16 @@ export function Hero() {
           variants={containerVariants}
         >
           <motion.p className="eyebrow" variants={itemVariants}>
-            Hoàng Tiến · Frontend Builder
+            Hoàng Tiến · Full-Stack & Data Engineering
           </motion.p>
           <motion.h1 variants={itemVariants}>
-            Thoughtful digital experiences, <span>built for people.</span>
+            End-to-end engineering, <span>from UI to data systems.</span>
           </motion.h1>
           <motion.p className="hero-role" variants={itemVariants}>
-            I am a <strong>Frontend Developer</strong>
+            I build <strong>Full-Stack & Data-Driven Applications</strong>
           </motion.p>
           <motion.p className="hero-description" variants={itemVariants}>
-            I build clear, responsive interfaces and practical products with React, TypeScript, and a product-minded approach.
+            Computer Science student with strong foundations across frontend, backend, and databases (React, TypeScript, Java, Spring Boot, PostgreSQL, Docker). Applying system thinking to scalable web platforms and data pipelines.
           </motion.p>
           <motion.div className="hero-actions" variants={itemVariants}>
             <motion.a

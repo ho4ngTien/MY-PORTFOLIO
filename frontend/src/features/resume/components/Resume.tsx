@@ -8,7 +8,7 @@ export function Resume() {
     <section className="section resume-section" id="resume">
       <div className="section-inner">
         <SectionHeading
-          description="A mix of academic foundations, independent practice, and hands-on projects."
+          description="Solid academic foundations in Computer Science paired with hands-on full-stack and systems engineering."
           eyebrow="The path so far"
           title="Resume"
         />
