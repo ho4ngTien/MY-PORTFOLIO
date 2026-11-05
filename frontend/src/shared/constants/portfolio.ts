@@ -183,25 +183,22 @@ export const faqs = [
 
 export const testimonials = [
   {
-    name: 'Sophia Martinez',
-    role: 'Operations Director',
-    company: 'TechVision Corp',
-    quote: 'The resulting system was robust, easy to navigate, and demonstrated deep architectural care across both frontend and backend.',
-    image: '/images/testimonials/testimonials-1.jpg',
+    name: 'Hồ Chí Minh',
+    role: 'Chủ tịch nước Việt Nam · 1890–1969',
+    quote: 'Không có gì quý hơn độc lập, tự do!',
+    translation: 'Nothing is more precious than independence and freedom!',
   },
   {
-    name: 'Michael Anderson',
-    role: 'Project Manager',
-    company: 'InnovateTech Ltd',
-    quote: 'Hoàng Tiến showed strong system thinking, delivered well-organized services, and quickly addressed complex requirements.',
-    image: '/images/testimonials/testimonials-2.jpg',
+    name: 'Nguyễn Trãi',
+    role: 'Danh nhân văn hóa thế giới · 1380–1442',
+    quote: 'Đem đại nghĩa để thắng hung tàn, lấy chí nhân để thay cường bạo.',
+    translation: 'Use great righteousness to overcome tyranny, and humaneness to replace violence.',
   },
   {
-    name: 'Jennifer Wilson',
-    role: 'Digital Strategy Lead',
-    company: 'FutureScope Inc',
-    quote: 'Clean architectural vision, thoughtful UI execution, and a forward-looking mindset towards data scalability.',
-    image: '/images/testimonials/testimonials-3.jpg',
+    name: 'Thân Nhân Trung',
+    role: 'Nhà giáo, danh sĩ triều Lê · 1418–1499',
+    quote: 'Hiền tài là nguyên khí quốc gia.',
+    translation: 'The talented and virtuous are the lifeblood of the nation.',
   },
 ]
 

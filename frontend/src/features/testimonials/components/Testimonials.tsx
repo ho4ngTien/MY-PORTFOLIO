@@ -33,7 +33,7 @@ export function Testimonials() {
   return (
     <section className="section testimonials-section" id="testimonials">
       <div className="section-inner">
-        <SectionHeading eyebrow="Kind words" title="Testimonials" description="Feedback from collaborators on the experience and the work." />
+        <SectionHeading eyebrow="Danh nhân Việt Nam" title="Những câu nói bất hủ" description="Tư tưởng và lời dạy vượt thời gian của các bậc tiền nhân." />
         <figure aria-live="polite" className="testimonial-card">
           <Quote aria-hidden="true" className="testimonial-quote-icon" size={33} />
           <div style={{ minHeight: '140px', overflow: 'hidden' }}>
@@ -48,9 +48,9 @@ export function Testimonials() {
                 variants={slideVariants}
               >
                 <blockquote className="testimonial-quote">“{testimonial.quote}”</blockquote>
+                <p className="testimonial-translation">{testimonial.translation}</p>
                 <figcaption className="testimonial-person">
-                  <img alt="" height="56" loading="lazy" src={testimonial.image} width="56" />
-                  <div><strong>{testimonial.name}</strong><span>{testimonial.role} · {testimonial.company}</span></div>
+                  <div><strong>{testimonial.name}</strong><span>{testimonial.role}</span></div>
                 </figcaption>
               </motion.div>
             </AnimatePresence>
